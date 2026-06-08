@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchFin — Legibilidad, Observabilidad y Anticipación Financiera</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- FLOATING INTERACTIVE CONTROLLER -->
+    <div class="interactive-toggle-container">
+        <span class="toggle-label">Modo Simulador IA</span>
+        <label class="switch">
+            <input type="checkbox" id="simulator-toggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="app-wrapper">
+        <!-- ==================== 1. HEADER ==================== -->
+        
+        </header>
+
+        <!-- ==================== 2. PROPÓSITO UNIFICADOR ==================== -->
+        <section class="section-container card-shadow purpose-section">
+            <div class="purpose-grid">
+                <div class="purpose-left">
+                    <span class="section-subtitle">PROPÓSITO UNIFICADOR</span>
+                    <p class="purpose-text">
+                        Hacer legible, observable y monitoreable la salud financiera del ecosistema empresarial, para anticipar riesgos y habilitar mejores decisiones.
+                    </p>
+                </div>
+                <div class="purpose-right">
+                    <div class="purpose-icon-item">
+                        <svg class="purpose-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M5 17h2v-3H5v3zm5 0h2V10h-2v7zm5 0h2V4h-2v13z"/></svg>
+                        <span>MENOS ASIMETRÍA</span>
+                    </div>
+                    <div class="divider-v"></div>
+                    <div class="purpose-icon-item">
+                        <svg class="purpose-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <span>MÁS CONFIANZA</span>
+                    </div>
+                    <div class="divider-v"></div>
+                    <div class="purpose-icon-item">
+                        <svg class="purpose-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <span>MEJORES DECISIONES</span>
+                    </div>
+                    <div class="divider-v"></div>
+                    <div class="purpose-icon-item">
+                        <svg class="purpose-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                        <span>MÁS CRÉDITO SANO</span>
+                    </div>
+                    <div class="divider-v"></div>
+                    <div class="purpose-icon-item">
+                        <svg class="purpose-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 00-7.54 16.59l1.42-1.42A8 8 0 1112 20v2a10 10 0 000-20z"/></svg>
+                        <span>ECOSISTEMA MÁS EFICIENTE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 3. DOS PLANOS QUE CONVIVEN ==================== -->
+        <section class="section-container card-shadow">
+            <h2 class="section-title">DOS PLANOS QUE CONVIVEN: MISMA INFRAESTRUCTURA, DOS MERCADOS</h2>
+            <div class="planos-grid">
+                <!-- PLANO A -->
+                <div class="plano-card plano-a-card interactive-item" id="plano-a">
+                    <div class="plano-badge-title blue-badge">
+                        <span>PLANO A | NEGOCIO ACTUAL (ESTABLE)</span>
+                        <small>Infraestructura para instituciones financieras</small>
+                    </div>
+                    
+                    <div class="plano-icons-container">
+                        <div class="plano-icon-sub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 118 2.83M22 12A10 10 0 0012 2v10z"/></svg><span>ALyCs</span></div>
+                        <div class="plano-icon-sub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>SGRs</span></div>
+                        <div class="plano-icon-sub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="21" width="18" height="2"/><path d="M19 21V10H5v11M12 5V2m0 0L9 5m3-3l3 3M10 10h4v11h-4z"/></svg><span>BANCOS</span></div>
+                        <div class="plano-icon-sub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M16 3.13a4 4 0 010 7.75M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg><span>AGENTES</span></div>
+                        <div class="plano-icon-sub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>FONDOS</span></div>
+                    </div>
+
+                    <div class="plano-info-columns">
+                        <div class="info-col">
+                            <h6>QUIÉN DECIDE</h6>
+                            <p>Compliance, Legales, Mesa de Operaciones, Gerencia / Directorio</p>
+                        </div>
+                        <div class="info-col">
+                            <h6>QUÉ RESUELVE</h6>
+                            <p>Onboarding, análisis de riesgo, registro y ruteo de órdenes, compliance</p>
+                        </div>
+                        <div class="info-col">
+                            <h6>CÓMO SE VENDE</h6>
+                            <p>Venta institucional, relación directa, ciclo consultivo</p>
+                        </div>
+                    </div>
+
+                    <div class="plano-footer-bar blue-bar">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8z"/></svg>
+                        <span>INGRESOS: CONTRATO SAAS INSTITUCIONAL</span>
+                    </div>
+                </div>
+
+                <!-- CONNECTOR -->
+                <div class="plano-connector">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 12H4M4 12l6-6M4 12l6 6M20 12l-6-6M20 12l6 6"/>
+                    </svg>
+                </div>
+
+                <!-- PLANO B -->
+                <div class="plano-card plano-b-card interactive-item" id="plano-b">
+                    <div class="plano-badge-title green-badge">
+                        <span>PLANO B | RED DE LEGIBILIDAD FINANCIERA (MARKETPLACE)</span>
+                        <small>Infraestructura para empresas (participantes) y entidades</small>
+                    </div>
+
+                    <div class="plano-icons-container">
+                        <div class="plano-icon-sub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7V5a2 2 0 012-2h14a2 2 0 012 2v2M5 21V7m14 14V7M9 7h6M9 11h6M9 15h6"/></svg><span>PYMES</span></div>
+                        <div class="plano-icon-sub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>AVALES & SGRS</span></div>
+                        <div class="plano-icon-sub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="21" width="18" height="2"/><path d="M19 21V10H5v11M12 5V2m0 0L9 5m3-3l3 3M10 10h4v11h-4z"/></svg><span>BANCOS</span></div>
+                        <div class="plano-icon-sub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>MARKETPLACE</span></div>
+                        <div class="plano-icon-sub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 118 2.83M22 12A10 10 0 0012 2v10z"/></svg><span>DIAGNÓSTICO</span></div>
+                    </div>
+
+                    <div class="plano-info-columns">
+                        <div class="info-col">
+                            <h6>QUIÉN DECIDE</h6>
+                            <p>CFO/Director PyME (para financiarse) · Entidad Financiera (para descubrir PyMEs)</p>
+                        </div>
+                        <div class="info-col">
+                            <h6>QUÉ RESUELVE</h6>
+                            <p>Legibilidad, diagnóstico de legajo, ofertas de líneas y descarga de informes de IA</p>
+                        </div>
+                        <div class="info-col">
+                            <h6>CÓMO SE VENDE</h6>
+                            <p>Autogestión digital, marca blanca embebida, referido de red y canal digital</p>
+                        </div>
+                    </div>
+
+                    <div class="plano-footer-bar green-bar">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8z"/></svg>
+                        <span>INGRESOS: HÍBRIDO (AD-ONS + VISIBILIDAD GRATIS / FEE ENTIDADES)</span>
+                    </div>
+                </div>
+
+                <!-- LA BASE QUE NOS HACE ÚNICOS -->
+                <div class="unique-base-card card-shadow">
+                    <div class="unique-header">
+                        <h5>LA BASE QUE NOS HACE ÚNICOS</h5>
+                        <p class="unique-sub">Ya está construida y ya la pagamos.<br>El mismo motor sirve a dos mercados diferentes.</p>
+                    </div>
+
+                    <ul class="unique-list">
+                        <li>
+                            <svg class="list-gear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                            <span>INTEGRACIONES CON FUENTES OFICIALES Y PRIVADAS</span>
+                        </li>
+                        <li>
+                            <svg class="list-gear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                            <span>MOTOR DE ANÁLISIS CUANTITATIVO Y CONTEXTUAL</span>
+                        </li>
+                        <li>
+                            <svg class="list-gear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                            <span>WORKFLOW, TRAZABILIDAD Y AUDITORÍA</span>
+                        </li>
+                        <li>
+                            <svg class="list-gear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                            <span>MONITOREO CONTINUO Y ALERTAS</span>
+                        </li>
+                        <li>
+                            <svg class="list-gear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                            <span>MODELOS PREDICTIVOS Y DE ESTRÉS</span>
+                        </li>
+                        <li>
+                            <svg class="list-gear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                            <span>IA Y NLP APLICADAS AL RIESGO</span>
+                        </li>
+                    </ul>
+
+                    <div class="plano-footer-bar purple-bar">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22a10 10 0 100-20 10 10 0 000 20zM12 6v6m0 0l3.5 3.5"/></svg>
+                        <span>MISMO MOTOR, DISTINTOS USOS. ESCALABILIDAD CON BAJO COSTO MARGINAL.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 4. ARQUITECTURA DE VALOR (6 CAPAS) ==================== -->
+        <section class="section-container card-shadow">
+            <div class="section-header-with-legend">
+                <h2 class="section-title">ARQUITECTURA DE VALOR MATCHFIN (6 CAPAS)</h2>
+                <div class="legend-container">
+                    <span class="legend-item"><span class="dot-legend dot-grey"></span> Dato externo</span>
+                    <span class="legend-item"><span class="dot-legend dot-blue"></span> Procesamiento MatchFin</span>
+                    <span class="legend-item"><span class="dot-legend dot-purple"></span> Inteligencia</span>
+                    <span class="legend-item"><span class="dot-legend dot-emerald"></span> Bucle Predictivo</span>
+                </div>
+            </div>
+
+            <div class="capas-grid">
+                <!-- CAPA 1 -->
+                <div class="capa-column interactive-item" id="capa-1" data-legend="grey">
+                    <div class="capa-header">
+                        <span class="capa-num-circle circle-grey">1</span>
+                        <div class="capa-title-text">
+                            <h6>CAPA DE DATOS</h6>
+                            <small>(INGESTA MULTIFUENTE)</small>
+                        </div>
+                    </div>
+                    <ul class="capa-bullets-list">
+                        <li>NOSIS, BCRA, AFIP, MAV, BYMA, MAE, Bancos (Open Finance), Balances, EECC, facturación, eCheqs, APIs, Noticias, Redes, Juicios, Registros Públicos</li>
+                    </ul>
+                    <div class="capa-footer-tag">
+                        <span>Estandarización y normalización</span>
+                    </div>
+                </div>
+
+                <!-- CAPA 2 -->
+                <div class="capa-column interactive-item" id="capa-2" data-legend="blue">
+                    <div class="capa-header">
+                        <span class="capa-num-circle circle-blue">2</span>
+                        <div class="capa-title-text">
+                            <h6>CAPA DE LEGIBILIDAD</h6>
+                            <small>(INTERPRETACIÓN ACTUAL)</small>
+                        </div>
+                    </div>
+                    <ul class="capa-bullets-list">
+                        <li>Ψ (Psi) - Health Layer</li>
+                        <li>Covenant Vivo</li>
+                        <li>Score Contextual</li>
+                        <li>Ratios y Liquidez</li>
+                        <li>Anomalías</li>
+                        <li>Radar de Riesgo</li>
+                        <li>Lectura Sistémica</li>
+                    </ul>
+                    <div class="capa-footer-tag">
+                        <span>Convierte datos en comprensión</span>
+                    </div>
+                </div>
+
+                <!-- CAPA 3 -->
+                <div class="capa-column interactive-item" id="capa-3" data-legend="blue">
+                    <div class="capa-header">
+                        <span class="capa-num-circle circle-blue">3</span>
+                        <div class="capa-title-text">
+                            <h6>CAPA DE OBSERVABILIDAD</h6>
+                            <small>(MONITOREO CONTINUO)</small>
+                        </div>
+                    </div>
+                    <ul class="capa-bullets-list">
+                        <li>Seguimiento de variables</li>
+                        <li>Alertas Inteligentes</li>
+                        <li>Cambios significativos</li>
+                        <li>Eventos y Noticias</li>
+                        <li>Tracking de Covenants</li>
+                        <li>Tenant Self-Service</li>
+                    </ul>
+                    <div class="capa-footer-tag">
+                        <span>Detecta cambios y señales tempranas</span>
+                    </div>
+                </div>
+
+                <!-- CAPA 4 -->
+                <div class="capa-column interactive-item" id="capa-4" data-legend="purple">
+                    <div class="capa-header">
+                        <span class="capa-num-circle circle-purple">4</span>
+                        <div class="capa-title-text">
+                            <h6>CAPA PREDICTIVA</h6>
+                            <small>(ANTICIPACIÓN)</small>
+                        </div>
+                    </div>
+                    <ul class="capa-bullets-list">
+                        <li>Modelos Probabilísticos</li>
+                        <li>Monte Carlo</li>
+                        <li>Breach Probability</li>
+                        <li>Stress Testing</li>
+                        <li>Escenarios</li>
+                        <li>Drift y Volatilidad</li>
+                        <li>Resiliencia y Factibilidad</li>
+                    </ul>
+                    <div class="capa-footer-tag">
+                        <span>Proyecta escenarios y probabilidades</span>
+                    </div>
+                </div>
+
+                <!-- CAPA 5 -->
+                <div class="capa-column interactive-item" id="capa-5" data-legend="purple">
+                    <div class="capa-header">
+                        <span class="capa-num-circle circle-purple">5</span>
+                        <div class="capa-title-text">
+                            <h6>CAPA COGNITIVA CON IA</h6>
+                            <small>(INTELIGENCIA AUMENTADA)</small>
+                        </div>
+                    </div>
+                    <ul class="capa-bullets-list">
+                        <li>NLP, copiloto, explicabilidad e investigación.</li>
+                        <li><strong>Assistant:</strong> Copiloto interno que consulta el modelo del tenant: fuentes, CUIT, hallazgos, riesgo.</li>
+                        <li><strong>Co-Assistant:</strong> Puente API hacia IA externa. Lo que se consulta y genera se reincorpora al conocimiento del tenant. MatchFin controla qué sale; el cliente gobierna el destino.</li>
+                    </ul>
+                    <div class="capa-blindaje-tag">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <span>Blindaje Activo</span>
+                    </div>
+                </div>
+
+                <!-- CAPA 6 -->
+                <div class="capa-column interactive-item" id="capa-6" data-legend="purple">
+                    <div class="capa-header">
+                        <span class="capa-num-circle circle-purple">6</span>
+                        <div class="capa-title-text">
+                            <h6>CAPA DE DECISIÓN</h6>
+                            <small>(ACCIÓN Y TRAZABILIDAD)</small>
+                        </div>
+                    </div>
+                    <ul class="capa-bullets-list">
+                        <li>Recomendaciones de acción</li>
+                        <li>Políticas y Overrides</li>
+                        <li>Comités de Crédito</li>
+                        <li>Trazabilidad completa</li>
+                        <li>Memoria histórica</li>
+                        <li>Reportes y Auditoría</li>
+                    </ul>
+                    <div class="capa-footer-tag">
+                        <span>Convierte inteligencia en decisiones auditables</span>
+                    </div>
+                </div>
+
+                <!-- CONOCIMIENTO PREDICTIVO (BUCLE) -->
+                <div class="capa-column interactive-item special-loop-card" id="capa-predictiva-loop" data-legend="emerald">
+                    <div class="capa-header">
+                        <span class="capa-num-circle circle-emerald">↺</span>
+                        <div class="capa-title-text">
+                            <h6>CONOCIMIENTO PREDICTIVO</h6>
+                            <small>(BUCLE DE RETROALIMENTACIÓN)</small>
+                        </div>
+                    </div>
+                    <ul class="capa-bullets-list">
+                        <li><strong>Huella P-L-R:</strong> Patrimonio, Liquidez y Rentabilidad en percentil sectorial.</li>
+                        <li><strong>Repositorio:</strong> Acumula secuencias temporales anonimizadas (T0 a Tn).</li>
+                        <li><strong>Loop de Valor:</strong> Aporta su huella a cambio de benchmarks finos y expectativas.</li>
+                    </ul>
+                    <div class="capa-loop-tag">
+                        <span>Cierra el loop de valor</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 5. UX & IA WORKFLOW ==================== -->
+        <section class="section-container card-shadow">
+            <h2 class="section-title">EXPERIENCIA DE USUARIO › Y WORKFLOW IA-DRIVEN</h2>
+            
+            <!-- WORKFLOW BIFURCATION SELECTOR (PLANO B) -->
+            <div class="workflow-variant-selector-container">
+                <span class="variant-selector-lbl">Bifurcación Plano B (Objetivo PyME):</span>
+                <div class="workflow-variant-capsules" id="workflow-variant-capsules">
+                    <button class="variant-capsule-btn active" data-variant="1">
+                        <span class="capsule-num">V1</span> Visible en Marketplace (Gratis)
+                    </button>
+                    <button class="variant-capsule-btn" data-variant="2">
+                        <span class="capsule-num">V2</span> Línea Preaprobada (Híbrido)
+                    </button>
+                    <button class="variant-capsule-btn" data-variant="3">
+                        <span class="capsule-num">V3</span> Diagnóstico Carpeta (Roadmap)
+                    </button>
+                    <button class="variant-capsule-btn" data-variant="4">
+                        <span class="capsule-num">V4</span> Informe IA (PDF Pago)
+                    </button>
+                </div>
+            </div>
+
+            <div class="workflow-steps-horizontal">
+                <!-- STEP 1 -->
+                <div class="workflow-step interactive-item" id="step-1">
+                    <div class="step-header">
+                        <span class="step-circle">1</span>
+                        <h6>INGRESO</h6>
+                    </div>
+                    <div class="step-body-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 7a4 4 0 100-8 4 4 0 000 8z"/></svg>
+                    </div>
+                    <p class="step-text">Empresa o institución ingresa al tenant privado.</p>
+                </div>
+                <div class="step-line-connector"></div>
+
+                <!-- STEP 2 -->
+                <div class="workflow-step interactive-item" id="step-2">
+                    <div class="step-header">
+                        <span class="step-circle">2</span>
+                        <h6>AUTOGESTIÓN / ONBOARDING</h6>
+                    </div>
+                    <div class="step-body-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+                    </div>
+                    <p class="step-text">Registro, validación y configuración del tenant.</p>
+                </div>
+                <div class="step-line-connector"></div>
+
+                <!-- STEP 3 -->
+                <div class="workflow-step interactive-item" id="step-3">
+                    <div class="step-header">
+                        <span class="step-circle">3</span>
+                        <h6>CARGA / CONSULTA DE CUIT O EMPRESA</h6>
+                    </div>
+                    <div class="step-body-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    </div>
+                    <p class="step-text">Ingreso manual, API o carga masiva.</p>
+                </div>
+                <div class="step-line-connector"></div>
+
+                <!-- STEP 4 -->
+                <div class="workflow-step interactive-item" id="step-4">
+                    <div class="step-header">
+                        <span class="step-circle">4</span>
+                        <h6>INVESTIGACIÓN IA Y ENRIQUECIMIENTO</h6>
+                    </div>
+                    <div class="step-body-icon">
+                        <span class="ai-box-badge">AI</span>
+                    </div>
+                    <p class="step-text">IA busca, compila y clasifica información estructurada y no estructurada.</p>
+                </div>
+                <div class="step-line-connector"></div>
+
+                <!-- STEP 5 -->
+                <div class="workflow-step interactive-item" id="step-5">
+                    <div class="step-header">
+                        <span class="step-circle">5</span>
+                        <h6>ANÁLISIS INTEGRAL (LEGIBILIDAD)</h6>
+                    </div>
+                    <div class="step-body-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 118 2.83M22 12A10 10 0 0012 2v10z"/></svg>
+                    </div>
+                    <p class="step-text">Se aplican modelos QUANT, score, covenants, ratios y lecturas contextuales.</p>
+                </div>
+                <div class="step-line-connector"></div>
+
+                <!-- STEP 6 -->
+                <div class="workflow-step interactive-item" id="step-6">
+                    <div class="step-header">
+                        <span class="step-circle">6</span>
+                        <h6 id="step-6-title">PREDICCIÓN Y ESCENARIOS</h6>
+                    </div>
+                    <div class="step-body-icon" id="step-6-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18M17 6h6v6"/></svg>
+                    </div>
+                    <p class="step-text" id="step-6-text">Motor predictivo genera escenarios, estrés y probabilidades de deterioro.</p>
+                </div>
+                <div class="step-line-connector"></div>
+
+                <!-- STEP 7 -->
+                <div class="workflow-step interactive-item" id="step-7">
+                    <div class="step-header">
+                        <span class="step-circle">7</span>
+                        <h6 id="step-7-title">RECOMENDACIÓN IA Y COPILOTO</h6>
+                    </div>
+                    <div class="step-body-icon" id="step-7-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                    </div>
+                    <p class="step-text" id="step-7-text">IA explica, recomienda acciones y responde consultas del analista.</p>
+                </div>
+                <div class="step-line-connector"></div>
+
+                <!-- STEP 8 -->
+                <div class="workflow-step interactive-item" id="step-8">
+                    <div class="step-header">
+                        <span class="step-circle">8</span>
+                        <h6 id="step-8-title">DECISIÓN / ACCIÓN Y MONITOREO</h6>
+                    </div>
+                    <div class="step-body-icon" id="step-8-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <p class="step-text" id="step-8-text">Decisión tomada, monitoreo activo, alertas y seguimiento.</p>
+                </div>
+            </div>
+
+            <!-- WORKFLOW ACHIEVEMENTS -->
+            <div class="workflow-metrics-footer">
+                <div class="metric-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span>MENOS TIEMPO</span></div>
+                <div class="metric-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg><span>MÁS INFORMACIÓN RELEVANTE</span></div>
+                <div class="metric-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/></svg><span>MENOS INCERTIDUMBRE</span></div>
+                <div class="metric-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>MEJORES DECISIONES</span></div>
+                <div class="metric-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3"/></svg><span>MAYOR TRAZABILIDAD</span></div>
+            </div>
+
+            <!-- WORKFLOW IA-DRIVEN FOOTNOTE -->
+            <div class="workflow-ia-footnote">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                <p>El Assistant consulta el modelo. El Co-Assistant lo expande: conecta IA externa por API y todo lo consultado y generado se reincorpora al conocimiento del tenant —siempre bajo las capas de control de MatchFin.</p>
+            </div>
+        </section>
+
+        <!-- ==================== 6. BUYER PERSONA & MONETIZACIÓN ==================== -->
+        <section class="section-container card-shadow">
+            <div class="buyer-mon-grid">
+                <!-- BUYER PERSONAS -->
+                <div class="buyer-personas-area">
+                    <h3 class="section-inner-title">BUYER PERSONA: DOS LÓGICAS, DOS DOLORES, UN MISMO MOTOR</h3>
+                    
+                    <!-- PLANO A BUYER -->
+                    <div class="buyer-card">
+                        <div class="buyer-header blue-text">
+                            <svg class="buyer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16M21 21H3m18-6H3m18-6H3"/></svg>
+                            <span>PLANO A — INSTITUCIONES FINANCIERAS</span>
+                        </div>
+                        <ul class="buyer-details">
+                            <li><strong>Quién decide:</strong> Compliance, Legales, Mesa de Operaciones, Gerencia / Directorio.</li>
+                            <li><strong>Dolor principal:</strong> Reducir riesgo crediticio, cumplir regulación, eficiencia en originación y monitoreo.</li>
+                            <li><strong>Qué valora:</strong> Confiabilidad, trazabilidad, soberanía de datos, integración, control y auditoría.</li>
+                            <li><strong>Cómo compra:</strong> Venta institucional, relación consultiva, contrato anual, implantación e integración.</li>
+                        </ul>
+                    </div>
+
+                    <!-- PLANO B BUYER -->
+                    <div class="buyer-card">
+                        <div class="buyer-header green-text">
+                            <svg class="buyer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7V5a2 2 0 012-2h14a2 2 0 012 2v2M5 21V7m14 14V7M9 7h6M9 11h6M9 15h6"/></svg>
+                            <span>PLANO B — EMPRESAS (ON-DEMAND)</span>
+                        </div>
+                        <ul class="buyer-details">
+                            <li><strong>Quién decide:</strong> Head de Créditos, Resp. Proveedores, CFO Operativo / CFO.</li>
+                            <li><strong>Dolor principal:</strong> Riesgo de proveedores/clientes, falta de información, incumplimientos, ineficiencia operativa.</li>
+                            <li><strong>Qué valora:</strong> Rapidez, simplicidad, precio, autogestión, información accionable y monitoreo.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- MODELOS DE MONETIZACIÓN -->
+                <div class="monetizacion-area">
+                    <h3 class="section-inner-title">MODELOS DE MONETIZACIÓN POTENCIAL</h3>
+                    <div class="monetization-columns">
+                        <!-- MON 1 -->
+                        <div class="mon-col interactive-item" id="mon-1">
+                            <div class="mon-badge">1</div>
+                            <div class="mon-col-title">SAAS INSTITUCIONAL (PLANO A)</div>
+                            <ul class="mon-bullets">
+                                <li>Onboarding</li>
+                                <li>Módulos</li>
+                                <li>Usuarios</li>
+                                <li>Workflows</li>
+                                <li>Integraciones</li>
+                                <li>Soporte</li>
+                            </ul>
+                            <div class="mon-model-info">
+                                <span>MODELO</span>
+                                <p>Suscripción anual Setup / Implantación Usuarios / Módulos</p>
+                            </div>
+                            <div class="mon-buyer-info">
+                                <span>BUYER</span>
+                                <p>ALyCs, SGRs, Bancos, Fondos</p>
+                            </div>
+                        </div>
+
+                        <!-- MON 2 -->
+                        <div class="mon-col interactive-item" id="mon-2">
+                            <div class="mon-badge">2</div>
+                            <div class="mon-col-title">ON-DEMAND EMPRESAS (PLANO B)</div>
+                            <ul class="mon-bullets">
+                                <li>Packs Análisis</li>
+                                <li>Packs Monitoreo</li>
+                                <li>Créditos de uso</li>
+                                <li>Tenant Self-Service</li>
+                                <li>Reportes</li>
+                            </ul>
+                            <div class="mon-model-info">
+                                <span>MODELO</span>
+                                <p>Pago por pack / consumo Créditos sin vencimiento*</p>
+                            </div>
+                            <div class="mon-buyer-info">
+                                <span>BUYER</span>
+                                <p>Empresas de todos los sectores</p>
+                            </div>
+                        </div>
+
+                        <!-- MON 3 -->
+                        <div class="mon-col interactive-item" id="mon-3">
+                            <div class="mon-badge">3</div>
+                            <div class="mon-col-title">INTELIGENCIA Y PREDICCIÓN</div>
+                            <ul class="mon-bullets">
+                                <li>Predictive Engine</li>
+                                <li>Stress Testing</li>
+                                <li>Alertas inteligentes</li>
+                                <li>Benchmark</li>
+                                <li>Copiloto IA</li>
+                                <li>Insights sectoriales</li>
+                            </ul>
+                            <div class="mon-model-info">
+                                <span>MODELO</span>
+                                <p>Suscripción premium Por usuario / API / Capacidad</p>
+                            </div>
+                            <div class="mon-buyer-info">
+                                <span>BUYER</span>
+                                <p>Instituciones y empresas avanzadas</p>
+                            </div>
+                        </div>
+
+                        <!-- MON 4 -->
+                        <div class="mon-col interactive-item" id="mon-4">
+                            <div class="mon-badge">4</div>
+                            <div class="mon-col-title">EMBEDDED / WHITE LABEL</div>
+                            <ul class="mon-bullets">
+                                <li>APIs</li>
+                                <li>Motor de Score</li>
+                                <li>Monitoreo</li>
+                                <li>Workflows</li>
+                                <li>Informes</li>
+                            </ul>
+                            <div class="mon-model-info">
+                                <span>MODELO</span>
+                                <p>API usage Por volumen o transacciones</p>
+                            </div>
+                            <div class="mon-buyer-info">
+                                <span>BUYER</span>
+                                <p>Fintechs, Bancos, Plataformas, ERPs</p>
+                            </div>
+                        </div>
+
+                        <!-- MON 5 -->
+                        <div class="mon-col interactive-item" id="mon-5">
+                            <div class="mon-badge">5</div>
+                            <div class="mon-col-title">NETWORK INTELLIGENCE</div>
+                            <ul class="mon-bullets">
+                                <li>Benchmarks</li>
+                                <li>Inteligencia sistémica</li>
+                                <li>Anomalías agregadas</li>
+                                <li>Riesgo sectorial</li>
+                                <li>Data Network Effects</li>
+                            </ul>
+                            <div class="mon-model-info">
+                                <span>MODELO</span>
+                                <p>Suscripción premium Intelligence layer / Reportes</p>
+                            </div>
+                            <div class="mon-buyer-info">
+                                <span>BUYER</span>
+                                <p>Instituciones, Fondos, Consultoras, Gobiernos</p>
+                            </div>
+                        </div>
+
+                        <!-- MON 6 -->
+                        <div class="mon-col interactive-item" id="mon-6">
+                            <div class="mon-badge">6</div>
+                            <div class="mon-col-title">INFRAESTRUCTURA TRANSACCIONAL (FUTURO)</div>
+                            <ul class="mon-bullets">
+                                <li>Originación</li>
+                                <li>Distribución</li>
+                                <li>Validación</li>
+                                <li>Due Diligence</li>
+                                <li>Clearing Intelligence</li>
+                            </ul>
+                            <div class="mon-model-info">
+                                <span>MODELO</span>
+                                <p>Fee transaccional / Por operación / Infraestructura</p>
+                            </div>
+                            <div class="mon-buyer-info">
+                                <span>BUYER</span>
+                                <p>Mercado de capitales, Originadores, Vehículos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mon-footnote">*Los créditos del tenant no vencen. Vencen los servicios/monitoreos según periodo contratado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 7. FLYWHEEL, MOAT & EVOLUCIÓN ==================== -->
+        <section class="section-container card-shadow">
+            <div class="flywheel-moat-evolution-grid">
+                <!-- FLYWHEEL -->
+                <div class="flywheel-area">
+                    <h3 class="section-inner-title">FLYWHEEL DEL ECOSISTEMA MATCHFIN</h3>
+                    <div class="flywheel-visual">
+                        <div class="flywheel-container">
+                            <!-- Background SVG arrows loop -->
+                            <svg class="flywheel-bg-arrows" viewBox="0 0 200 200">
+                                <defs>
+                                    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                        <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="var(--apple-blue)"/>
+                                    </marker>
+                                </defs>
+                                <circle cx="100" cy="100" r="65" fill="none" stroke="var(--border-subtle)" stroke-width="2" stroke-dasharray="4 4"/>
+                                <!-- Circular arrow arcs -->
+                                <path d="M 100,35 A 65,65 0 0,1 165,100" fill="none" stroke="var(--apple-blue)" stroke-width="2" marker-end="url(#arrow)"/>
+                                <path d="M 165,100 A 65,65 0 0,1 100,165" fill="none" stroke="var(--apple-blue)" stroke-width="2" marker-end="url(#arrow)"/>
+                                <path d="M 100,165 A 65,65 0 0,1 35,100" fill="none" stroke="var(--apple-blue)" stroke-width="2" marker-end="url(#arrow)"/>
+                                <path d="M 35,100 A 65,65 0 0,1 100,35" fill="none" stroke="var(--apple-blue)" stroke-width="2" marker-end="url(#arrow)"/>
+                            </svg>
+                            
+                            <!-- Center Node -->
+                            <div class="flywheel-center-node">
+                                <span>MÁS EMPRESAS Y ENTIDADES</span>
+                            </div>
+                            
+                            <!-- 4 Outer Readable Nodes -->
+                            <div class="flywheel-node-item node-top">
+                                <span>Más monitoreo y lock-in</span>
+                            </div>
+                            <div class="flywheel-node-item node-right">
+                                <span>Más histórico y comportamiento</span>
+                            </div>
+                            <div class="flywheel-node-item node-bottom">
+                                <span>Mejores modelos y predicciones</span>
+                            </div>
+                            <div class="flywheel-node-item node-left">
+                                <span>Más valor percibido y mejores decisiones</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="flywheel-caption">
+                        <strong>EFECTO RED:</strong> cada nueva empresa hace al sistema más inteligente, más preciso y más valioso para todos.
+                    </p>
+                </div>
+
+                <!-- MOAT ESTRUCTURAL -->
+                <div class="moat-area">
+                    <h3 class="section-inner-title">MOAT ESTRUCTURAL</h3>
+                    <ul class="moat-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3"/></svg> Histórico propietario y continuo</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3"/></svg> Network Graph de relaciones y comportamiento</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3"/></svg> Modelos predictivos y señales propias</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3"/></svg> Integraciones profundas y workflows críticos</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3"/></svg> Efecto red y benchmark sistémico</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3"/></svg> Trazabilidad, auditoría y confianza institucional</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3"/></svg> Costos de cambio de creálisis para el cliente</li>
+                    </ul>
+                </div>
+
+                <!-- EVOLUCIÓN DE LA EMPRESA -->
+                <div class="evolution-area">
+                    <h3 class="section-inner-title">EVOLUCIÓN DE LA EMPRESA</h3>
+                    <div class="evolution-flow-container">
+                        <div class="evo-node" id="evo-1">
+                            <span class="evo-number">1</span>
+                            <h6>SOFTWARE FINANCIERO</h6>
+                            <p>Herramienta de análisis</p>
+                        </div>
+                        <div class="evo-arrow-flow">➔</div>
+                        
+                        <div class="evo-node" id="evo-2">
+                            <span class="evo-number">2</span>
+                            <h6>INFRAESTRUCTURA OPERATIVA</h6>
+                            <p>Optimiza flujos y procesos</p>
+                        </div>
+                        <div class="evo-arrow-flow">➔</div>
+
+                        <div class="evo-node" id="evo-3">
+                            <span class="evo-number">3</span>
+                            <h6>MOTOR DE OBSERVABILIDAD</h6>
+                            <p>Monitorea y detecta señales tempranas</p>
+                        </div>
+                        <div class="evo-arrow-flow">➔</div>
+
+                        <div class="evo-node" id="evo-4">
+                            <span class="evo-number">4</span>
+                            <h6>INFRAESTRUCTURA COGNITIVA</h6>
+                            <p>Predice y recomienda con IA</p>
+                        </div>
+                        <div class="evo-arrow-flow">➔</div>
+
+                        <div class="evo-node" id="evo-5">
+                            <span class="evo-number">5</span>
+                            <h6>INTELIGENCIA DE RED</h6>
+                            <p>Estandariza y coordina el ecosistema</p>
+                        </div>
+                    </div>
+                    <div class="evolution-footer-arrow-banner">
+                        <span>De herramienta a estándar de mercado.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 8. METRICAS, KPIS, PROPUESTA DE VALOR ==================== -->
+        <section class="section-container card-shadow">
+            <div class="metrics-kpi-grid">
+                <!-- IMPACTO PARA CADA ACTOR -->
+                <div class="metrics-block">
+                    <h4 class="block-title">IMPACTO PARA CADA ACTOR</h4>
+                    <div class="impact-item">
+                        <strong>INSTITUCIONES FINANCIERAS</strong>
+                        <p>Originación más rápida, menor riesgo, cumplimiento y trazabilidad total.</p>
+                    </div>
+                    <div class="impact-item">
+                        <strong>EMPRESAS</strong>
+                        <p>Mejores decisiones comerciales, menos incobrables, más eficiencia.</p>
+                    </div>
+                    <div class="impact-item">
+                        <strong>MERCADO DE CAPITALES</strong>
+                        <p>Más activos estandarizados, comparables y transferibles.</p>
+                    </div>
+                    <div class="impact-item">
+                        <strong>ECONOMÍA</strong>
+                        <p>Más crédito sano, más inversión, más crecimiento sostenible.</p>
+                    </div>
+                </div>
+
+                <!-- KPIs CLAVE DEL MODELO -->
+                <div class="metrics-block">
+                    <h4 class="block-title">KPIs CLAVE DEL MODELO</h4>
+                    <ul class="kpis-checkmark-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Empresas activas (On-Demand)</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> CUITs analizados y monitoreados</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Tasa de monitoreo recurrente</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Uso promedio por tenant</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Revenue Recurring (MRR / ARR)</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Churn y expansión (NDR)</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Precisión predictiva (Breach / Drift)</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Tiempo promedio de análisis</li>
+                    </ul>
+                </div>
+
+                <!-- PROPUESTA DE VALOR ÚNICA -->
+                <div class="metrics-block unique-val-prop-block">
+                    <h4 class="block-title">PROPUESTA DE VALOR ÚNICA</h4>
+                    <p class="value-prop-main-statement">
+                        MATCHFIN CONVIERTE INFORMACIÓN DISPERSA Y ARTESANAL EN INTELIGENCIA ACCIONABLE, PARAMETRIZABLE, AUDITABLE Y TRANSFERIBLE.
+                    </p>
+                    <div class="value-prop-horizontal-timeline">
+                        <div class="prop-flow-item"><span>Menos fricción operativa</span></div>
+                        <div class="prop-flow-arrow">➔</div>
+                        <div class="prop-flow-item"><span>Más confianza entre actores</span></div>
+                        <div class="prop-flow-arrow">➔</div>
+                        <div class="prop-flow-item"><span>Decisiones más rápidas</span></div>
+                        <div class="prop-flow-arrow">➔</div>
+                        <div class="prop-flow-item"><span>Menor riesgo y mayor eficiencia</span></div>
+                        <div class="prop-flow-arrow">➔</div>
+                        <div class="prop-flow-item font-bold-item"><span>Infraestructura para crecer</span></div>
+                    </div>
+                </div>
+
+                <!-- VENTAJAS COMPETITIVAS -->
+                <div class="metrics-block">
+                    <h4 class="block-title">VENTAJAS COMPETITIVAS</h4>
+                    <ul class="kpis-checkmark-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Única infraestructura que combina flujos, datos, modelos e inteligencia.</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Independencia relativa de proveedores de datos.</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Capa de IA aplicada al contexto financiero real.</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Doble mercado con la misma plataforma.</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Efecto red y aprendizaje acumulativo.</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Arquitectura escalable, segura y multi-tenant.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 9. FOOTER ==================== -->
+        
+    </div>
+
+    <!-- ==================== INTERACTIVE SIDE DRAWER ==================== -->
+    <div class="interactive-side-drawer" id="side-drawer">
+        <div class="drawer-header">
+            <div class="drawer-meta-title">
+                <span class="drawer-bullet-indicator"></span>
+                <span>Inspector de Relaciones y Simulador IA</span>
+            </div>
+            <button class="drawer-close-btn" id="drawer-close">&times;</button>
+        </div>
+
+        <div class="drawer-body">
+            <!-- CONSOLE OF RELATIONSHIPS -->
+            <div class="drawer-section" id="drawer-relations-box">
+                <div class="console-box-header">
+                    <div class="mac-dot-group">
+                        <span class="mac-dot red"></span>
+                        <span class="mac-dot yellow"></span>
+                        <span class="mac-dot green"></span>
+                    </div>
+                    <span class="console-title-span" id="console-target-title">Consola de Relaciones</span>
+                </div>
+                <div class="console-box-body" id="console-body-content">
+                    <div class="empty-state">
+                        <p>Haz clic en cualquier componente de la landing (Plano, Capa, Paso de UX, Modelo) para visualizar su información técnica, conexiones operativas e impactos transversales.</p>
+                    </div>
+                </div>
+                <div class="console-box-footer" id="console-relations-nav" style="display: none;">
+                    <span class="footer-nav-lbl">VÍNCULOS:</span>
+                    <div class="relation-tags" id="nav-tags-container"></div>
+                </div>
+            </div>
+
+            <!-- AI ASSISTANT CHAT -->
+            <div class="drawer-section">
+                <div class="assistant-chat-panel">
+                    <div class="cuit-header">
+                        <div class="cuit-label">
+                            <span class="ai-pill">IA</span>
+                            <span>MatchFin Assistant</span>
+                        </div>
+                        <div class="cuit-status">
+                            <span class="pulse-dot"></span>
+                            <span>CUIT: 30-74891253-9 (Metalúrgica del Plata S.A.)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-messages-container" id="chat-messages">
+                        <div class="chat-msg ai-msg">
+                            <p class="msg-author">MatchFin Assistant</p>
+                            <p class="msg-body">Dataset de CUIT cargado. Puedes hacer clic en los pasos del Workflow para ejecutar la simulación de análisis, o consultarme directamente utilizando la caja de chat inferior (ej. "¿tiene deudas AFIP?", "¿riesgo a 60 días?", etc.).</p>
+                        </div>
+                    </div>
+
+                    <form class="chat-form-container" id="chat-form">
+                        <input type="text" id="chat-input" placeholder="Pregunta sobre AFIP, juicios, plazos..." autocomplete="off">
+                        <button type="submit" id="chat-submit-btn">➔</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS SCRIPTS -->
+    <script src="app.js"></script>
+</body>
+</html>
